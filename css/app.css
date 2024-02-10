@@ -104,3 +104,28 @@ ul.navigation-list li a:hover{
 .project img{
     width: 800px;
 }
+
+.achievement img{
+    width: 800px;
+}
+
+.achievement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.content .achievement .title{
+    margin-inline: auto;
+}
+
+.achievement article{
+    margin-bottom: 20px;
+}
