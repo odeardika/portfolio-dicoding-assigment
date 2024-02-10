@@ -129,3 +129,43 @@ ul.navigation-list li a:hover{
 .achievement article{
     margin-bottom: 20px;
 }
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+    /* margin: 50%; */
+    /* position: absolute;
+    margin: auto;
+    align-items: center;
+    justify-content: center; */
+}
+main aside .social-media-icon {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media-icon ul {
+    width: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #92B4EC;
+    padding: 1.5rem 1rem;
+    flex-flow: column nowrap;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    gap: 1.5rem;
+}
+
+main aside .social-media-icon ul li{
+    list-style-type: none;
+}
+
+main aside .social-media-icon ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+
