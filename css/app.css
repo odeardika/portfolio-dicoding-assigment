@@ -101,9 +101,26 @@ ul.navigation-list li a:hover{
     margin-bottom: 20px;
 }
 
-.project img{
-    width: 800px;
+.project .img-section{
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
 }
+
+.project .img-section div{
+    width: 50px;
+}
+
+.project .img-section div.back{
+    transform: scaleX(-1);
+}
+
+.project .img-section img{
+    width: 800px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
 
 .achievement img{
     width: 800px;
