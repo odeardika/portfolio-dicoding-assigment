@@ -186,3 +186,6 @@ main aside .social-media-icon ul li a{
     transition: all 0.1s ease-in-out;
 }
 
+.img-section div.next div.back{
+    background-color: blue;
+}
