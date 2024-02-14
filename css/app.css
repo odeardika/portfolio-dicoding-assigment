@@ -119,6 +119,10 @@ ul.navigation-list li a:hover{
     width: 800px;
     margin-left: 3rem;
     margin-right: 3rem;
+    padding: 2rem;
+    transition-property: 'margin-right';
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -151,11 +155,6 @@ main aside {
     position: fixed;
     inset-block: 0;
     inset-inline-end: 0;
-    /* margin: 50%; */
-    /* position: absolute;
-    margin: auto;
-    align-items: center;
-    justify-content: center; */
 }
 main aside .social-media-icon {
     height: 100%;
@@ -186,6 +185,13 @@ main aside .social-media-icon ul li a{
     transition: all 0.1s ease-in-out;
 }
 
-.img-section div.next div.back{
-    background-color: blue;
+main div.content div.project article div svg{
+    height: 1.2rem;
+    width: 2rem;
+}
+
+main div.content div.project article div svg{
+    padding: 1.5rem 1rem;
+    border-radius: 300000px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
