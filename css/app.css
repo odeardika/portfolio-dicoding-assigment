@@ -1,20 +1,36 @@
+:root {
+    --primary-color : #FFFFFF;
+    --secondary-color : #323848;
+    --third-color : #336EF9;
+    --forth-color : #FFB302;
+    --text-color : #020626;
+}
+
 body{
     font-family: 'Asap', sans-serif;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF;
+    background-color: var(--bg-color)
 }
 
 header{
-    background-color: #92B4EC;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
     z-index: 9999;
 }
 
 h1.title{
-    padding-left: 5rem;
+    margin-left: 5rem;
+    padding: 1rem;
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
+h1.title u{
+    text-decoration-color: var(--forth-color);
 }
 
 header .headear-content{
@@ -41,14 +57,18 @@ ul.navigation-list li{
 ul.navigation-list li a{
     text-decoration: none;
     padding: 0.5rem 1.5rem;
-    border-radius: 999px;
     transition: all 0.2s ease-in-out;
-    color: #FFFFFF;
+    color: var(--text-color);
 }
 
 ul.navigation-list li a:hover{
-    background-color: #FFFFFF;
-    color: #92B4EC;
+    text-decoration: underline;
+    text-decoration-color: var(--forth-color);
+    border-bottom: var(--forth-color);
+    color:  var(--third-color);
+}
+.profile {
+    background-color: var(--secondary-color);
 }
 
 .profile article.profile-article{
@@ -60,18 +80,72 @@ ul.navigation-list li a:hover{
     margin-inline: auto;
     gap: 1rem;
     padding-top: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .profile article.profile-article .profile-detail{
-    background-color: #92B4EC;
-    border-radius: 20px;
     padding: 3rem;
-    color: #FFFFFF;
+    color: var(--primary-color);
+}
+.profile article.profile-article .profile-detail p{
+    display: none;
+    margin-bottom: 0;
+}
+.profile article.profile-article .profile-detail h2 {
+    font-size: 4rem;
+    margin-bottom: 0;
 }
 
+.profile article.profile-article .profile-detail h2 span.name{
+    color: var(--forth-color);
+}
+
+.profile article.profile-article .profile-detail h2 span.name:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--forth-color);
+    text-decoration-thickness: 0.1rem;
+}
+
+.profile article.profile-article .profile-detail h3{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.profile article.profile-article .profile-detail h3 span.role{
+    color: var(--forth-color);
+}
+
+.profile article.profile-article .profile-detail h3 span.role:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--forth-color);
+    text-decoration-thickness: 0.1rem;
+}
+
+.profile article.profile-article .profile-detail button{
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border-radius: 10000px;
+    border-style: none;
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 13rem;
+}
+
+.profile article.profile-article .profile-detail button:hover{
+    background-color: var(--forth-color);
+    color: #020626;
+}
+
+.profile article.profile-article .profile-detail .hidden{
+    color: var(--third-color);
+    display: none;
+}
+.profile article.profile-article .profile-detail .hidden:hover{
+    color: var(--forth-color);
+}
+
+
 .profile article.profile-article .image-profile{
-    background-color: #92B4EC;
     box-sizing: content-box;
     border-radius: 999px;
 }
@@ -82,6 +156,7 @@ ul.navigation-list li a:hover{
 }
 
 .content .project {
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -116,6 +191,7 @@ ul.navigation-list li a:hover{
 }
 
 .project .img-section img{
+    background-color: var(--primary-color);
     width: 800px;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -166,7 +242,7 @@ main aside .social-media-icon ul {
     align-items: center;
     justify-content: center;
     margin: auto;
-    background-color: #92B4EC;
+    background-color:  var(--primary-color);
     padding: 1.5rem 1rem;
     flex-flow: column nowrap;
     border-top-left-radius: 12px;
@@ -181,7 +257,6 @@ main aside .social-media-icon ul li{
 main aside .social-media-icon ul li a{
     text-decoration: none;
     font-size: 1.5rem;
-    color: white;
     transition: all 0.1s ease-in-out;
 }
 

@@ -1,3 +1,4 @@
+// *Project Image Arrow Logic
 const backArrow = document.querySelectorAll('.back')
 backArrow.forEach((item) => {
     item.addEventListener('click', (event) => {
@@ -40,4 +41,29 @@ nextArrow.forEach((item) => {
             img.setAttribute('src',`assets\\img\\project\\${projectClass}\\${parseInt(curretImgIndex)+1}.png`)
         }
     })
+})
+
+// *Profile More Button
+const profileMoreButton = document.querySelector('#profile-more')
+const profileHiddenText = document.querySelector('#profile-hidden')
+
+profileMoreButton.addEventListener('click', event => {
+    const moreButton = event.target
+    const moreText = event.target.nextElementSibling
+    const hiddenText = event.target.nextElementSibling.nextElementSibling
+    
+    moreButton.style.display = 'none'
+    moreText.style.display = 'inline'
+    hiddenText.firstChild.style.display = 'inline'
+    hiddenText.style.display = 'inline'
+})
+
+profileHiddenText.addEventListener('click', event => {
+    hiddenText = event.target
+    moreText = event.target.parentElement.previousElementSibling
+    moreButton = event.target.parentElement.previousElementSibling.previousElementSibling
+
+    moreButton.style.display = 'inline'
+    moreText.style.display = 'none'
+    hiddenText.style.display = 'none'
 })
