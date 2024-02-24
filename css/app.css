@@ -171,10 +171,6 @@ ul.navigation-list li a:hover{
 }
 
 
-.content .project .title{
-    margin-inline: auto;
-}
-
 .project article{
     margin-bottom: 20px;
 }
@@ -277,4 +273,37 @@ main div.content div.project article div svg{
     padding: 1.5rem 1rem;
     border-radius: 300000px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background-color: #1b1f2e   
+}
+
+footer .copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+}
+
+
+footer h2{
+    color: var(--bg-color);
+    font-size: 2rem;
+    
+}
+
+footer p {
+    color: #8d91a2;
+}
+
+footer hr{
+    border-bottom:1px #8d91a2;
+    width: 20rem;
+}
+
+footer p span {
+    color: var(--third-color);
 }
