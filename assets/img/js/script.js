@@ -1,4 +1,4 @@
-// *Project Image Arrow Logic
+//* Project Image Arrow Logic
 const backArrow = document.querySelectorAll('.back')
 backArrow.forEach((item) => {
     item.addEventListener('click', (event) => {
@@ -43,7 +43,7 @@ nextArrow.forEach((item) => {
     })
 })
 
-// *Profile More Button
+//* Profile More Button
 const profileMoreButton = document.querySelector('#profile-more')
 const profileHiddenText = document.querySelector('#profile-hidden')
 

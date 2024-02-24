@@ -4,6 +4,8 @@
     --third-color : #336EF9;
     --forth-color : #FFB302;
     --text-color : #020626;
+    --bg-color : #F5F7FA;
+    --secondary-bg-color : #f0f3f9; 
 }
 
 body{
@@ -19,6 +21,8 @@ header{
     background-color: var(--primary-color);
     color: var(--bg-color);
     z-index: 9999;
+    position: sticky;
+    top: 0;
 }
 
 h1.title{
@@ -97,7 +101,7 @@ ul.navigation-list li a:hover{
 }
 
 .profile article.profile-article .profile-detail h2 span.name{
-    color: var(--forth-color);
+    color: var(--primary-color);
 }
 
 .profile article.profile-article .profile-detail h2 span.name:hover{
@@ -156,13 +160,12 @@ ul.navigation-list li a:hover{
 }
 
 .content .project {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-inline: auto;
     max-width: 1200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
     flex-direction: column;
 }
@@ -204,6 +207,7 @@ ul.navigation-list li a:hover{
 
 .achievement img{
     width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .achievement {
@@ -211,12 +215,11 @@ ul.navigation-list li a:hover{
     justify-content: space-around;
     align-items: center;
     margin-inline: auto;
-    max-width: 1200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
     flex-direction: column;
     margin-bottom: 3rem;
     margin-top: 3rem;
+    background-color: var(--secondary-bg-color);
 }
 
 .content .achievement .title{
@@ -248,6 +251,7 @@ main aside .social-media-icon ul {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     gap: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 main aside .social-media-icon ul li{
@@ -258,6 +262,10 @@ main aside .social-media-icon ul li a{
     text-decoration: none;
     font-size: 1.5rem;
     transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media-icon ul li a img:hover{
+    width: 4rem;
 }
 
 main div.content div.project article div svg{
