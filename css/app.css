@@ -12,8 +12,8 @@ body{
     font-family: 'Asap', sans-serif;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     background-color: var(--bg-color)
 }
 
@@ -60,7 +60,7 @@ ul.navigation-list li{
 
 ul.navigation-list li a{
     text-decoration: none;
-    padding: 0.5rem 1.5rem;
+    padding: 0rem 0rem;
     transition: all 0.2s ease-in-out;
     color: var(--text-color);
 }
@@ -288,11 +288,9 @@ footer .copyright{
     margin-inline: auto;
 }
 
-
 footer h2{
     color: var(--bg-color);
     font-size: 2rem;
-    
 }
 
 footer p {
@@ -306,4 +304,37 @@ footer hr{
 
 footer p span {
     color: var(--third-color);
+}
+
+@media screen and (max-width: 768px) {
+    h1.title{
+        margin-left: 0.5rem;
+        padding: 1rem;
+        background-color: var(--third-color);
+        color: var(--primary-color);
+        border-radius: 5px;
+        white-space: nowrap;
+        font-size: 1.5rem;
+    }
+    
+    nav.navigation ul.navigation-list{
+        display: none;
+    }
+
+    nav.navigation div.nav-button hr{
+        width: 1.5rem;
+        
+    }
+
+    nav.navigation div.nav-button{
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+        border-radius: 5px;
+        background-color: var(--third-color);
+    }
+
+
 }
