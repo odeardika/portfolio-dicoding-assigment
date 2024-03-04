@@ -67,3 +67,13 @@ profileHiddenText.addEventListener('click', event => {
     moreText.style.display = 'none'
     hiddenText.style.display = 'none'
 })
+
+// Navigation Burger Button
+const burgerBotton = document.querySelector('.nav-button')
+burgerBotton.addEventListener('click', event => {
+    console.log(event.target)
+    const navigation = document.querySelector('#navigation')
+    navigation.classList.toggle('navigation-open')
+    navigation.style.right = 0
+    document.querySelector('#navigation-list').classList.toggle('navigation-list-open')
+}) 
