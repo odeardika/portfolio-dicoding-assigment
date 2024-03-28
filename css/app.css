@@ -314,6 +314,8 @@ nav.navigation div.nav-button{
 @media screen and (max-width: 768px) {
     body{
         max-width: 768px;
+        padding: 0;
+        margin: 0; 
     }
 
     h1.title{
@@ -341,6 +343,12 @@ nav.navigation div.nav-button{
         display: none;
     }
     
+    nav.navigation-open {
+        /* background-color: #020626; */
+        padding-right: 0;
+        margin-right: 0;
+    }
+
     nav.navigation-open ul.navigation-list-open{
         display: flex;
         flex-direction: column;
@@ -378,5 +386,118 @@ nav.navigation div.nav-button{
         
     }
 
+    .profile article.profile-article {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
+    .profile article.profile-article h2 span {
+        font-size: smaller;
+        margin-top: 0;
+        padding-top: 0;
+        
+    }
+
+    .profile article.profile-article .image-profile{
+        padding: 0;
+        margin: 0;
+    }
+
+    div.profile-detail{
+        margin: 0;
+        /* align-items: center; */
+        text-align: center;
+    }
+
+    div.profile-detail h2{
+        margin: 0;
+    }
+
+    div.img-section {
+        display: flex;
+        /* max-width: 789px; */
+        flex-wrap: wrap;
+        /* margin-inline: auto; */
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        /* background-color: #020626; */
+    }
+
+    .project .img-section img {
+        order: -1;
+        width: 18rem;
+        height: auto;
+        padding: 0.5rem;
+        margin-inline: auto;
+    }
+
+    
+
+    main div.content div.project article div svg{
+        height: 0.5rem;
+        width: 1rem;
+    }
+
+    main div.content div.project article {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    main div.content div.project article h3{
+        /* text-align: center; */
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+
+    main div.content div.project article div:nth-child(2){
+        max-width: 100%;
+        margin-inline: auto;
+        justify-content: space-around;
+        align-items: center;
+        max-width:max-content;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    main div.content div.project article div div p{
+        text-align: justify;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .achievement img{
+        width: 20rem;        
+    }
+
+    .achievement article h3 {
+        font-size: small;
+    }
+    
+    .social-media-icon ul li a img {
+        width: 2rem;
+    }
+
+    main aside .social-media-icon ul {
+        width: 2rem;
+    }
+    
+    main aside .social-media-icon ul li a img:hover{
+        width: 2.5rem;
+    }
+
+    footer .copyright h2{
+        font-size: medium;
+    }
+
+    footer hr {
+        width: 8rem;
+    }
+
+    footer .copyright p {
+        font-size: smaller;
+    }
 }
